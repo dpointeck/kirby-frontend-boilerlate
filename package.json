@@ -1,0 +1,23 @@
+{
+  "name": "kirby-dev-boilerplate",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "hot": "NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "production": "NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "dependencies": {
+    "dotenv": "^6.1.0",
+    "postcss-import": "^12.0.1",
+    "postcss-nesting": "^7.0.0",
+    "browser-sync": "^2.26.3",
+    "browser-sync-webpack-plugin": "2.0.1",
+    "glob-all": "^3.1.0",
+    "laravel-mix": "^2.1.14",
+    "purgecss-webpack-plugin": "^1.4.0",
+    "tailwindcss": "^0.7.2"
+  }
+}
